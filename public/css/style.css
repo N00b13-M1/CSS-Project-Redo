@@ -1,0 +1,286 @@
+body{
+    margin:0;
+}
+
+.purple{
+    background-color: purple; 
+    font-size: 20px; 
+    display: flex; 
+    align-items: center;
+
+}
+
+.top-left{
+    width: 10%;
+    text-align:left;
+    display:flex;
+    align-items:center;
+}
+
+.top-left img[src]{
+    margin:5px;
+    width:20%;
+    height:20%;
+
+}
+
+.top-right{
+    width:90%;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    background-color: rgb(7, 250, 128);
+    margin: 3px;
+}
+
+label{
+    color: violet;
+    margin: 3px;
+}
+
+.navbar{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-bottom:rgba(83, 81, 80, 0.1) solid 1px;
+}
+
+
+.navbar-left{
+    border-right:rgba(83, 81, 80, 0.1)solid 1px;
+    flex:2;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-left>img[src]{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* ANIMATION FOOTER LOGO*/
+
+.navbar-left>img {
+    animation: rot 6s infinite linear;
+  }
+  
+  @keyframes rot {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(359deg);
+    }
+  }
+  
+/* ANIMATION FOOTER LOGO*/
+
+
+.navbar-mid{
+    flex:5;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar-mid>ol{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type:none;
+    padding-left:0px;
+}
+
+.navbar-mid>ol>li{
+    display:flex;
+    margin-left: 1%;
+    margin-right: 1%;
+    position: relative;
+}
+
+.navbar-mid>ol>li a{
+    text-decoration: none;
+    font-weight: bolder;
+    color:black;
+    max-width: max-content;
+    position: relative;
+}
+
+/* ANIMATION FOR NAVBAR MID*/
+
+.navbar-mid>ol>li>a::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom:-2px;
+    transition: width 0.5s ease;
+    background: linear-gradient(to right, green 25%, blue 50%, red 75%)
+}
+
+.navbar-mid>ol>li>a:hover::before{
+        width: 100%;
+}
+
+.navbar-right{
+    display: flex;
+    flex:2;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border-left:rgba(83, 81, 80, 0.1) solid 1px;
+}
+
+.navbar-right a{
+    text-decoration: none;
+    font-weight: bolder;
+    color:black;
+}
+
+
+.h1{
+    text-align: center; 
+    font-size: 60px;
+}
+
+section>hr{
+    width:40px;
+    margin-top:0px; 
+    margin-bottom: 50px;
+    background-color: rgb(155, 31, 155);
+    height: 2px;
+    border: none;
+}
+
+.content{
+    margin-left: 12%; 
+    margin-right: 12%;
+}
+
+
+.content>p:first-of-type{
+    text-align: left;
+
+}
+
+.content>ol{
+    text-align: left;
+    line-height: 50px;
+    list-style-type:initial;
+    width: 100%;
+    box-shadow:  0 0 100px 2px rgba(0, 0, 0, 1);
+    border: 2px black solid;
+    border-radius: 50px;
+    transition: 1s;
+ 
+}
+
+.content>ol:hover{
+    transform:scale(1.035);
+    border: 2px black solid;
+    border-radius: 50px;
+}
+
+
+.content>h2{
+    font-size: 40px;
+}
+
+footer{
+    background-color: rgb(83, 81, 80);
+}
+
+.socials{
+    display: flex;
+    justify-content: center;
+}
+
+.fab{
+    color: white;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 50px;
+    padding: 15px;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.socials a{
+    color:white;
+    text-decoration: none;
+    font-size: 20px;
+    display:flex;
+    align-items: center;
+    display: flex;
+}
+/*Test Comment*/
+
+
+footer>hr{
+    background-color:solid 1 px rgb(87, 66, 55);
+    width: 100%;
+    margin: 0;
+    height: 2px;
+    border: none;
+}
+
+.logofoot{
+    text-align: center; 
+    margin: 10px auto;
+}
+
+footer>.logofoot:hover img{
+    transform: rotateY(360deg);
+}
+
+/* ANIMATION FOOTER LOGO*/
+
+.logofoot>img {
+    animation: rotation 4s infinite linear;
+}
+  
+  @keyframes rotation {
+    from {
+      transform: rotateX(0deg);
+    }
+    to {
+      transform: rotateX(359deg);
+    }
+}
+  
+/* ANIMATION FOOTER LOGO*/
+
+
+img:last-of-type{
+    width:10%;
+    height:10%;
+}
+
+.copyright{
+    text-align: center;
+}
+
+p:last-of-type{
+    color:rgb(87, 66, 55);
+}
+
